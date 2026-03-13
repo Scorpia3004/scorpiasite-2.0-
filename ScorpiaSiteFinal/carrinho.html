@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpia Store</title>
+    <link rel="stylesheet" href="carrinho_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* CORREÇÃO DO BOTÃO MOBILE */
+        /* Esconde o botão no desktop */
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Mostra só no mobile */
+        @media(max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="Sessao_menu">
+            <nav class="Menu">
+                <button class="menu-toggle" id="mobile-menu">
+                    ☰
+                </button>
+                <div id="nav-list" class="nav-list">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#sessao2">Colecionáveis</a>
+                    <a href="index.html#murais">Murais</a>
+                    <a href="index.html#sessao4">Sobre</a>
+                    <a href="index.html#contato">Contato</a>
+                    <a href="carrinho.html">
+                        <button class="botao-carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h1 class="titulo-carrinho">Seu Carrinho</h1>
+
+        <div class="carrinho-container">
+            <div id="lista-carrinho"></div>
+
+            <div class="total-carrinho">
+                <h2>Total:</h2>
+                <p id="valor-total">R$ 0</p>
+            </div>
+
+            <button class="finalizar">Finalizar compra</button>
+        </div>
+        <script src="carrinho.js"></script>
+    </main>
+    <footer class="footer">
+        <div class="footer_conteudo">
+            <h3>Scorp Store</h3>
+            <p>Arte urbana, graffiti e criatividade.</p>
+            <div class="footer_links">
+                <a href="https://www.instagram.com/_scorpiarte/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@scorpiagraffiti" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/5561982989746" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <p class="direitos">
+                © 2026 Scorp Store — Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Menu mobile toggle
+        const menuBtn = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+
+        menuBtn.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
