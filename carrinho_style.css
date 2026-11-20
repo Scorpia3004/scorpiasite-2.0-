@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel+Decorative:wght@400;700;900&family=New+Amsterdam&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{
+scroll-behavior: smooth;
+}
+
+
+/* -------MENU DO SITE */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.Sessao_menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row-reverse ;
+    padding:20px;
+    background-color:rgb(183, 196, 196);
+    backdrop-filter: blur(8px);
+    color: #6b676a;  
+
+}
+
+.Menu a{color: #ffffff; 
+    text-decoration: none; 
+    margin-left: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: 0.3s;}
+
+.Menu a:hover{
+    color:#4f4a4d;
+}
+
+/*-----------CARRINHO--------*/
+
+.titulo-carrinho{
+
+    font-family: 'Cinzel Decorative', cursive;
+    text-align:center;
+    margin-top:40px;
+    color:#4f4a4d;
+
+}
+
+.carrinho-container{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    background-color: rgba(238, 248, 250, 0.95);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+/* ITEM DO CARRINHO */
+
+.item-carrinho{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:15px;
+
+padding:15px;
+
+border-bottom:1px solid rgba(0,0,0,0.08);
+flex-wrap: wrap;
+
+}
+
+/* IMAGEM DO PRODUTO */
+
+.item-carrinho img{
+
+width:auto;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+/* TEXTO DO PRODUTO */
+
+.info-produto{
+
+display:flex;
+
+flex-direction:column;
+
+flex:1;
+
+font-family:'Cinzel Decorative', cursive;
+
+color:#5f6160;
+
+}
+
+.info-produto span{
+
+font-size:15px;
+
+}
+
+/* PREÇO */
+
+.preco-produto{
+
+font-weight:bold;
+
+color:#4f4a4d;
+
+}
+
+/* BOTÃO REMOVER */
+
+.remover-item{
+
+background-color:#ffffff;
+
+border:none;
+
+color:#4f4a4d;
+
+font-size:14px;
+
+padding:6px 10px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.remover-item:hover{
+
+background-color:#484949;
+
+transform:scale(1.1);
+
+}
+
+/* TOTAL */
+
+.total-carrinho{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:25px;
+
+font-weight:bold;
+
+font-size:18px;
+
+color:#4f4a4d;
+
+}
+
+/* BOTÃO FINALIZAR */
+
+.finalizar{
+
+width:100%;
+
+margin-top:20px;
+
+padding:14px;
+
+font-size:16px;
+
+border:none;
+
+border-radius:20px;
+
+background-color:#4f4a4d;
+
+color:white;
+
+cursor:pointer;
+
+transition:0.3s;
+
+font-family:'Cinzel Decorative', cursive;
+
+}
+
+.finalizar:hover{
+
+background-color:#6b676a;
+
+transform:scale(1.03);
+
+}
+
+/* -----------FOOTER */
+
+.footer{
+
+    background-color: #6b676a;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer_conteudo{
+    margin: auto;
+    max-width: 1200px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer h3{
+
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    margin: 0;
+    
+}
+
+.footer p{
+
+    color: #e5e5e5;
+    margin: 0;
+    font-family: Cinzel Decorative, cursive;
+}
+
+.footer_links{
+
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin: 0;
+}
+
+.footer_links a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.footer_links a:hover{
+
+    text-decoration: underline;
+}
+
+.direitos{
+
+    font-size: 14px;
+    color: #cccccc;
+}
+body{
+margin:0;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+main{
+flex:1;
+}
+
+/* -----------JAVA */
+
+.animar{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.animar.apareceu{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.botao-carrinho{
+
+display: inline-flex;
+align-items: center;
+gap: 8px;
+
+padding: 6px 14px;
+
+font-size: 13px;
+
+background-color: #4f4a4d;
+
+color: white;
+
+border: none;
+
+border-radius: 20px;
+
+cursor: pointer;
+
+font-family: 'Cinzel Decorative', cursive;
+
+transition: 0.3s;
+
+}
+
+.botao-carrinho:hover{
+
+background-color: #6b676a;
+
+transform: translateY(-2px);
+
+}
+
+
+
+/* ===== CELULARES PEQUENOS ===== */
+
+@media (max-width: 480px){
+
+.sessaoplus{
+    padding: 60px 15px;
+}
+
+.sessaoplus h1{
+    font-size: 22px;
+}
+
+.sessaoplus p{
+    font-size: 13px;
+}
+
+.imagens img{
+    height: 220px;
+}
+
+}
+
+/* ============================= */
+/* RESPONSIVO MOBILE */
+/* ============================= */
+
+
+@media (max-width: 768px) {
+
+    /* --- MENU --- */
+    .Sessao_menu 
+        {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-end !important; /* Joga o botão para a direita */
+        align-items: center !important;
+        width: 100% !important;
+        min-height: 60px; /* Garante que a barra não "achate" */
+        background-color: rgb(183, 196, 196) !important; /* Cor que você definiu */
+        padding: 0 20px !important;
+        position: relative;
+        box-sizing: border-box;
+        
+    }
+
+    /* Esconde a div interna antiga para não conflitar com a nav-list */
+    .Menu div:not(.nav-list) {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none; /* Escondido por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Abre logo abaixo da barra */
+        right: 0;
+        width: 100%;
+        background: rgba(68, 68, 68, 0.95);
+        text-align: center; /* Centralizado fica melhor no mobile */
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .nav-list.active {
+        display: flex !important;
+    }
+
+    .nav-list a {
+        padding: 15px;
+        border-top: 1px solid #555;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        margin-left: 0; /* Remove a margem lateral para os links no mobile */
+    }
+    .item-carrinho img {
+        height: 150px; /* Reduz a altura no mobile */
+        width: 100%;   /* Faz a imagem ocupar a largura disponível se necessário */
+        object-fit: contain;
+    }
+    .footer_conteudo {
+        flex-direction: column; /* Empilha os itens no mobile */
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer_links {
+        justify-content: center; /* Centraliza os links no mobile */
+    }
+    
+}
+
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----- contador do carrinho ----- */
+.contador-carrinho{
+    background:#fff;
+    color:#4f4a4d;
+    border-radius:10px;
+    padding:0 7px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* esconde o botão ☰ no desktop (no mobile o media query mostra) */
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.carrinho-vazio{
+    text-align:center;
+    padding:30px 0;
+    font-family:'Cinzel Decorative', cursive;
+    color:#5f6160;
+}
+
+.controle-qtd{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:8px 0;
+}
+
+.controle-qtd button{
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    background:#4f4a4d;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.controle-qtd button:hover{
+    background:#6b676a;
+    transform:scale(1.1);
+}
+
+.controle-qtd span{
+    font-weight:bold;
+    min-width:20px;
+    text-align:center;
+}

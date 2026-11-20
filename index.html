@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Scorpia Store</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <section class="Sessao_menu">
+            
+            <nav class="Menu">
+                <button class="menu-toggle" id="mobile-menu">
+                ☰
+                </button>
+                <div id="nav-list" class="nav-list">
+                    <a href="#Home">Home</a>
+                    <a href="#Colecionaveis">Colecionáveis</a>
+                    <a href="#Murais">Murais</a>
+                    <a href="#Sobre">Sobre</a>
+                    <a href="#Contato">Contato</a>
+                    <a href="jogo.html">Jogo</a>
+                    <a href="carrinho.html">
+                        <button class="botao-carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="contador-carrinho" style="display:none">0</span>
+</button>
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="Home" class="sessao1 animar">
+            <nav>
+                 <img src="Back1.PNG" alt="Background">
+            
+                <div class="conteudo">
+                      <h1>Nova Coleção em breve</h1>
+                      <p>Explore nossas ofertas mais recentes, que vão de esculturas vibrantes à peças exclusivas de vestuário.</P>
+                      <a href="#Colecionaveis" class="btn">Shop Now</a>
+                </div> 
+            </nav>            
+        </section>
+
+        <section id="Colecionaveis" class="sessao2 animar">
+            <h1>Nossas latas colecionáveis</h1>
+            <p>Esculturas autorais feitas a partir de latas de spray recicladas, unindo arte urbana, exclusividade e sustentabilidade.</p>
+            <div class="produtos">
+                <div class="conteudo1">              
+                        <img src="Original.png" alt="Foto0">
+                        <h2>Dragão Vermelho</h2>
+                        <p>Preço: R$ 200,00</p>
+                        <button class="botao-compra" onclick="adicionarCarrinho('Dragão Vermelho',200,'Original.png')">
+                        Adicionar ao carrinho
+                        </button>
+                        
+                </div>
+
+                <div class="conteudo1">        
+                        <img src="Mock1.PNG" alt="Foto1">
+                        <h2>Dragão Branco</h2>
+                        <p>Preço: R$ 300,00</p>
+                        <button class="botao-compra" onclick="adicionarCarrinho('Dragão Branco',300,'Mock1.PNG')">
+                        Adicionar ao carrinho
+                        </button>
+                </div> 
+                <div class="conteudo1"> 
+                        <img src="Mock2.PNG" alt="Foto2">
+                        <h2>Dragão Azul</h2>
+                        <p>Preço: R$ 300,00</p>
+                        <button class="botao-compra" onclick="adicionarCarrinho('Dragão Azul',300,'Mock2.PNG')">
+                        Adicionar ao carrinho
+                        </button>   
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao3">
+            <img src="Mock5.png" alt="Foto4">
+        </section>
+
+        <section id="Murais" class="sessaoplus">
+            <div>
+                <h1>Murais</h1>
+                <p>Transformamos paredes em telas vibrantes, trazendo a arte urbana para o seu espaço. Nossos murais são criações exclusivas que combinam criatividade, cor e expressão, dando vida a qualquer ambiente.</p>
+            </div>
+            <div class="imagens">
+            <div >
+                <img src="Mural0.PNG" alt="Mural0">
+                <h2>Bahia de Todas as Cores - BA</h2>
+            </div>
+
+            <div>
+                <img src="Mural1.jpg" alt="Mural0">
+                <h2>Luziânia - GO</h2>
+            </div>
+
+            <div>
+                <img src="mural3.PNG" alt="Mural0">
+                <h2>Setor Comercial Sul - DF</h2>
+            </div>
+            </div>
+        </section>
+
+        <section id="Sobre" class="sessao4 animar">
+            <div class="Sobre">
+                <div class="textos">
+                <div class="conteudo2">
+                    <h1>Nossa história</h1>
+                    <p>A Scorpia Store nasceu da necessidade que nós artistas urbanos que desejam viver daquilo que amam temos. Nosso objetivo é legitimizar e afirmar o potencial da arte urbana não só como movimento social, mas também como uma profissão que pode sim mudar vidas.</p>
+                </div>
+
+                <div class="conteudo2">
+                    <h1>A artista</h1>
+                    <p>Thuiza Oliveira, vulgo Scorpia, de 25 anos e natural de Brasília, é a criadora por trás de cada peça exclusiva da Scorpia Store. O vulgo "Scorpia" surgiu em 2020 quando começou a graffitar, e logo viu um mundo de diferentes possibilidades que a arte podia trazer para sua vida.</p>
+                    
+                </div>
+
+                <div class="conteudo2">
+                    <h1>Nosso propósito</h1>
+                    <p>Comprometidos com a valorização da arte urbana e a promoção da sustentabilidade através de nossas criações.</p>
+                </div>
+                </div>
+                <div class="img_conteudo2">
+                <img src="perfil.png" alt="Perfil">
+                </div>
+            </div>
+        </section>
+
+        <section id="Contato" class="sessao5 animar">
+<div class="Contato">
+        
+        
+        <div class="info_contato">
+            <h1>Contato</h1>
+            <p>Tem alguma dúvida ou quer saber mais sobre nossas peças? Entre em contato conosco.</p>
+
+            <div class="item_contato">
+                <p>Email: Scorpiastore.arte@gmail.com</p>
+            </div>
+
+            <div class="item_contato">
+                <p>Instagram: @_scorpiastore</p>
+            </div>
+
+            <div class="item_contato">
+                <p>WhatsApp: (61) 98298-9746</p>
+            </div>
+        </div>
+
+        <div class="form_contato">
+           <form>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <button id="mensagem" class="btn">Clique aqui</button>
+
+            </form>
+        </div>
+            
+    </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer_conteudo">
+
+            <h3>Scorp Store</h3>
+            <p>Arte urbana, graffiti e criatividade.</p>
+        
+        <div class="footer_links">
+            <a href="https://www.instagram.com/_scorpiarte/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/@scorpiagraffiti" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://wa.me/5561982989746" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p class="direitos">
+            © 2026 Scorp Store — Todos os direitos reservados.
+        </p>
+
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpia Store</title>
+    <link rel="stylesheet" href="carrinho_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <section class="Sessao_menu">
+            <nav class="Menu">
+                <button class="menu-toggle" id="mobile-menu">
+                    ☰
+                </button>
+                <div id="nav-list" class="nav-list">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#Colecionaveis">Colecionáveis</a>
+                    <a href="index.html#Murais">Murais</a>
+                    <a href="index.html#Sobre">Sobre</a>
+                    <a href="index.html#Contato">Contato</a>
+                    <a href="jogo.html">Jogo</a>
+                    <a href="carrinho.html">
+                        <button class="botao-carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="contador-carrinho" style="display:none">0</span>
+</button>
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h1 class="titulo-carrinho">Seu Carrinho</h1>
+
+        <div class="carrinho-container">
+            <div id="lista-carrinho"></div>
+
+            <div class="total-carrinho">
+                <h2>Total:</h2>
+                <p id="valor-total">R$ 0,00</p>
+            </div>
+
+            <button class="finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+        </div>
+        <script src="carrinho.js"></script>
+    </main>
+    <footer class="footer">
+        <div class="footer_conteudo">
+            <h3>Scorp Store</h3>
+            <p>Arte urbana, graffiti e criatividade.</p>
+            <div class="footer_links">
+                <a href="https://www.instagram.com/_scorpiarte/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@scorpiagraffiti" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/5561982989746" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <p class="direitos">
+                © 2026 Scorp Store — Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

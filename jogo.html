@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Scorpia Store</title>
+    <link rel="stylesheet" href="carrinho_style.css">
+    <link rel="stylesheet" href="jogo_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <section class="Sessao_menu">
+            <nav class="Menu">
+                <button class="menu-toggle" id="mobile-menu">☰</button>
+                <div id="nav-list" class="nav-list">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#Colecionaveis">Colecionáveis</a>
+                    <a href="index.html#Murais">Murais</a>
+                    <a href="index.html#Sobre">Sobre</a>
+                    <a href="index.html#Contato">Contato</a>
+                    <a href="jogo.html">Jogo</a>
+                    <a href="carrinho.html">
+                        <button class="botao-carrinho">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="contador-carrinho" style="display:none">0</span>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1 class="titulo-jogo">Jogue Agora</h1>
+        <p class="descricao-jogo">Divirta-se com o nosso jogo exclusivo da Scorpia Store!</p>
+
+        <div class="jogo-container">
+            <div class="jogo-frame">
+                <!-- Exporte do Construct 3 como "HTML5 website" e coloque os arquivos na pasta /jogo -->
+                <iframe id="jogo" src="C:\Users\FLIP(Filipin)\Downloads\scorpiasite-2.0--main\scorpiasite-2.0--main\ScorpiaSiteFinal\Projeto_Final\index.html" title="Jogo Scorpia Store"
+                        allow="fullscreen; autoplay; gamepad" allowfullscreen></iframe>
+            </div>
+            <button class="btn-tela-cheia" id="btn-tela-cheia">Tela cheia</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_conteudo">
+            <h3>Scorp Store</h3>
+            <p>Arte urbana, graffiti e criatividade.</p>
+            <div class="footer_links">
+                <a href="https://www.instagram.com/_scorpiarte/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@scorpiagraffiti" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wa.me/5561982989746" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="direitos">© 2026 Scorp Store — Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="carrinho.js"></script>
+    <script>
+        document.getElementById("btn-tela-cheia").addEventListener("click", () => {
+            const f = document.getElementById("jogo");
+            if (f.requestFullscreen) f.requestFullscreen();
+            else if (f.webkitRequestFullscreen) f.webkitRequestFullscreen();
+        });
+    </script>
+</body>
+</html>

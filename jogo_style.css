@@ -1,0 +1,61 @@
+.titulo-jogo{
+    font-family:'Cinzel Decorative', cursive;
+    text-align:center;
+    margin-top:40px;
+    color:#4f4a4d;
+}
+
+.descricao-jogo{
+    font-family:'Cinzel Decorative', cursive;
+    text-align:center;
+    color:#5f6160;
+    margin:10px 20px 0;
+    font-size:14px;
+}
+
+.jogo-container{
+    max-width:1000px;
+    margin:30px auto 40px;
+    padding:20px;
+    background-color:rgba(238,248,250,0.95);
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+/* Ajuste o aspect-ratio para a proporção do SEU jogo (ex: 16/9, 4/3, 9/16) */
+.jogo-frame{
+    width:100%;
+    aspect-ratio:16 / 9;
+    background:#1d1e1f;
+    border-radius:14px;
+    overflow:hidden;
+}
+
+.jogo-frame iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+}
+
+.btn-tela-cheia{
+    margin-top:15px;
+    padding:10px 22px;
+    border:none;
+    border-radius:20px;
+    background-color:#4f4a4d;
+    color:#fff;
+    font-family:'Cinzel Decorative', cursive;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-tela-cheia:hover{
+    background-color:#6b676a;
+    transform:scale(1.05);
+}
+
+@media (max-width:768px){
+    .jogo-container{ margin:20px 10px; padding:10px; }
+}
